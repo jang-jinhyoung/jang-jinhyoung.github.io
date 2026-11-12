@@ -2,9 +2,86 @@
 <html lang="ko">
 <head>
   <meta charset="UTF-8">
-  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>장진형 | 포트폴리오</title>
+  <meta name="description" content="한국외국어대학교 글로벌캠퍼스 컴퓨터공학부 장진형의 포트폴리오">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>안녕하세요! 포트폴리오 준비 중입니다.,</h1>
+  <div class="page">
+
+    <aside class="profile">
+      <div class="photo">
+        <img src="images/profile.jpg" alt="장진형 프로필 사진"
+             onerror="this.remove(); this.parentNode.classList.add('photo-empty');">
+        <span class="photo-fallback" aria-hidden="true">장</span>
+      </div>
+      <h1>장진형</h1>
+      <p class="affiliation">한국외국어대학교 글로벌캠퍼스<br>컴퓨터공학부 2학년 2학기</p>
+      <ul class="contact">
+        <li><a href="mailto:wlsgud040821@hufs.ac.kr">wlsgud040821@hufs.ac.kr</a></li>
+        <li><a href="https://github.com/202302431jangjinhyoung" target="_blank" rel="noopener">github.com/202302431jangjinhyoung</a></li>
+      </ul>
+    </aside>
+
+    <main>
+      <section id="about">
+        <h2>소개</h2>
+        <p>안녕하세요, 컴퓨터공학을 전공으로 하고 있는 장진형입니다. <br>다양한 경험을 통해 관심 분야를 찾아가는 중입니다.</p>
+      </section>
+
+      <section id="goal">
+        <h2>학습 목표</h2>
+        <p>아직 진로를 탐색하는 단계이지만, 하고 싶은 일이 생겼을 때 바로 도전할 수 있도록 <br>전공 기초를 탄탄히 다지는 것을 목표로 하고 있습니다.</p>
+      </section>
+
+      <section id="courses">
+        <h2>수강 과목</h2>
+
+        <h3>수강 중</h3>
+        <ul class="course-list">
+          <li><span>웹 프로그래밍</span><span class="tag">전공</span></li>
+          <li><span>알고리즘</span><span class="tag">전공</span></li>
+          <li><span>객체지향프로그래밍</span><span class="tag">전공</span></li>
+          <li><span>기초미적분학2</span><span class="tag">교양</span></li>
+        </ul>
+
+        <h3>수강 완료</h3>
+        <ul class="course-list">
+          <li><span>자료구조</span><span class="tag">전공</span></li>
+          <li><span>웹 디자인</span><span class="tag">교양</span></li>
+          <li><span>기초미적분학1</span><span class="tag">교양</span></li>
+        </ul>
+      </section>
+
+      <section id="skills">
+        <h2>배우고 있는 기술</h2>
+        <p>HTML, JavaScript 등 웹 사이트 제작 기술과 알고리즘을 학습하고 있습니다.</p>
+      </section>
+
+      <section id="projects">
+        <h2>수업 과제</h2>
+        <ul class="project-list">
+          <li>
+            <a href="projects/club/index.html">동아리 홍보 사이트</a>
+            <p>수업 과제로 제작한 동아리 홍보용 웹 사이트입니다.</p>
+          </li>
+          <li>
+            <a href="projects/hometown/index.html">My Hometown 소개 사이트</a>
+            <p>수업 과제로 제작한 고향 소개 웹 사이트입니다.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section id="activities">
+        <h2>진행 중인 활동</h2>
+        <p>교내 바이브 코딩 대회에 참여하고 있습니다.</p>
+      </section>
+    </main>
+
+  </div>
 </body>
 </html>
